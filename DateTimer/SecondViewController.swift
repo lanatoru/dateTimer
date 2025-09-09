@@ -8,6 +8,15 @@
 import UIKit
 
 class SecondViewController: ViewController {
+    
+    @IBOutlet weak var firstDateLabel: UILabel!
+    @IBOutlet weak var secondDateLabel: UILabel!
+    
+    var timer: Timer?
+    var time = 0
+    var inititalDate: Date?
+    var nextDate: Date?
+    var resultDate: Date?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -16,14 +25,13 @@ class SecondViewController: ViewController {
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+  
+    @IBAction func startTimer(_ sender: Any) {
     }
-    */
-
+    
+    @IBAction func stopTimer(_ sender: Any) {
+    }
+    
+    @IBAction func restartTimer(_ sender: Any) {
+    }
 }
