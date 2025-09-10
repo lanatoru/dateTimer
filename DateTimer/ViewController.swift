@@ -20,6 +20,7 @@ class ViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "SecondVC" {
             if let vc = segue.destination as? SecondViewController {
+                // передать дату из первого контроллера во второй
                 vc.inititalDate = firstDate.date
                 vc.nextDate = secondDate.date
                 
